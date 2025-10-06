@@ -1,9 +1,11 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import "./App.css"; // optional: App-specific styles
+import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   return (
@@ -11,11 +13,10 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Skills />
       <Projects />
       <Contact />
-      <footer className="footer">
-        <p>© 2025 Neha. All Rights Reserved.</p>
-      </footer>
+      <Footer />
     </>
   );
 }

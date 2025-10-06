@@ -1,4 +1,3 @@
-/* ===== Global Styles ===== */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -6,11 +5,7 @@ body {
   color: #333;
 }
 
-a {
-  text-decoration: none;
-}
-
-/* ===== Navbar ===== */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -22,40 +17,34 @@ a {
   top: 0;
   z-index: 100;
 }
-
 .logo {
   font-size: 1.5rem;
   font-weight: 600;
   color: #0078ff;
 }
-
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
 }
-
 .nav-links a {
   color: #333;
   font-weight: 500;
 }
-
 .nav-links a:hover {
   color: #0078ff;
 }
 
-/* ===== Hero Section ===== */
+/* Hero */
 .hero {
   text-align: center;
   padding: 6rem 1rem;
   background: linear-gradient(120deg, #0078ff, #00d4ff);
   color: white;
 }
-
 .hero span {
   color: #ffeb3b;
 }
-
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -66,49 +55,80 @@ a {
   font-weight: 600;
   transition: 0.3s;
 }
-
 .btn:hover {
   background: #ffeb3b;
   color: #333;
 }
 
-/* ===== Sections ===== */
+/* Sections */
 section {
   padding: 3rem 5%;
   text-align: center;
 }
-
 section h2 {
   color: #0078ff;
   margin-bottom: 1.5rem;
 }
 
-/* ===== Projects ===== */
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.skill-card {
+  width: 200px;
+}
+.progress {
+  background: #ddd;
+  border-radius: 20px;
+  height: 10px;
+  width: 100%;
+}
+.progress-bar {
+  background: #0078ff;
+  height: 100%;
+  border-radius: 20px;
+  transition: width 1.5s ease-in-out;
+}
+
+/* Projects */
 .project-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 }
-
 .card {
   background: #fff;
   padding: 1rem;
   border-radius: 10px;
   width: 250px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* ===== Contact ===== */
+/* Contact */
 .contact a.btn {
   margin-top: 1rem;
 }
 
-/* ===== Footer ===== */
+/* Footer */
 .footer {
   text-align: center;
   padding: 1rem;
   background: #0078ff;
   color: white;
   margin-top: 2rem;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
